@@ -1,0 +1,58 @@
+
+.hero__bg {
+  background-color: #86c3d7;
+}
+
+.hero {
+  height:  100vh;
+  min-height: 650px;
+  color: #fff;
+  position: relative;
+  background: url("../img/fone-tree.png") right center / 40% auto no-repeat;
+
+  &:before {
+    content: url("../img/corner-leaf.png");
+    position: absolute;
+    bottom: -40px;
+    left: 2%;
+  }
+
+  &:after {
+    content: url("../img/berries-leaf.png");
+    position: absolute;
+    bottom: -40px;
+    right: 0;
+  }
+}
+
+
+
+
+
+.hero__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding: 24px 0 45px;
+  background: url("../img/chocolates.png") right 5% center no-repeat;
+}
+
+.hero__main-title {
+  font-size: 48px;
+  line-height: 1.1;
+  font-weight: bold;
+  margin-bottom: 17px;
+  text-transform: uppercase;
+  padding-top: 35px;
+}
+
+.hero__title-desc {
+  font-size: 21px;
+  margin-bottom: 38px;
+  padding-right: 10%;
+}
+.hero__title-section
+{
+  width: 46%;
+}
