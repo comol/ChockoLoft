@@ -1,14 +1,9 @@
-
-.hero__bg {
-  background-color: #86c3d7;
-}
-
 .hero {
   height:  100vh;
   min-height: 650px;
   color: #fff;
   position: relative;
-  background: url("../img/fone-tree.png") right center / 40% auto no-repeat;
+  background: url("../img/fone-tree.png") right center / 40% auto no-repeat, #86c3d7;
 
   &:before {
     content: url("../img/corner-leaf.png");
