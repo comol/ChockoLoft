@@ -3,12 +3,7 @@
   min-height: rem(650px);
   color: #fff;
   position: relative;
-  background-color: #86c3d7;
-
-  @media screen and (min-width: 768px) {
-    background: url("../img/fone-tree.png") right center / 40% auto no-repeat, #86c3d7;
-  }
-
+  background: url("../img/fone-tree.png") right center / 40% auto no-repeat, #86c3d7;
   @include tablets {
     background-position: right bottom 88%;
   }
@@ -18,15 +13,25 @@
     position: absolute;
     bottom: rem(-40px);
     left: 2%;
+    @include tablets {
+      bottom: rem(300px);
+      left: rem(10px);
+      width: rem(400px);
+      height: rem(400px);
+    }
   }
 
   &:after {
-    @media screen and (min-width: 768px) {
-      content: url("../img/berries-leaf.png");
-    }
+    content: url("../img/berries-leaf.png");
     position: absolute;
     bottom: rem(-40px);
     right: 0;
+    @include tablets {
+      bottom: rem(450px);
+      left: rem(10px);
+      width: rem(400px);
+      height: rem(400px);
+    }
   }
 }
 
@@ -88,5 +93,13 @@
   }
 
 }
+
+.hero__icons-section {
+  @include tablets {
+    display: none;
+  }
+}
+
+
 
 

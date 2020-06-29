@@ -3,6 +3,9 @@
   top: 20%;
   right: 3%;
   z-index: 100;
+  @include tablets {
+    display: none;
+  }
 }
 
 .menu__link {
@@ -46,6 +49,16 @@
 .menu {
   margin: 0 rem(30px);
   padding-top: rem(5px);
+
+  @include tablets {
+    display: none;
+  }
+}
+
+.phone-number {
+  @include tablets {
+    display: none;
+  }
 }
 
 .menu__list {

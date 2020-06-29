@@ -82,16 +82,7 @@
 
 .benefits-section {
   position: relative;
-  background: url("../img/side-leaf.png") left top 57% no-repeat;
-
-  @include phones {
-    background: none;
-  }
-
-  @include tablets {
-    background: none;
-  }
-
+  background: url("../img/left_leaf.png") left top 10%  no-repeat;
 
   &:before {
     content: url("../img/bars-and-berries.png");
