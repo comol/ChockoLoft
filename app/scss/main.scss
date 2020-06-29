@@ -5,8 +5,14 @@ $baseFontSize: 18px;
 $blue: #61c4d9;
 $darkGreen: #0b4d3c;
 
+$tablets: 768px;
+$phones: 480px;
+
+@import "./layout/media";
 @import "./layout/layout";
 @import "./layout/fonts";
+
+
 
 //blocks
 @import "./blocks/header";
@@ -21,5 +27,6 @@ $darkGreen: #0b4d3c;
 @import "./blocks/form";
 @import "./blocks/fixed-menu";
 @import "./blocks/order";
+@import "./blocks/hamburger";
 
 

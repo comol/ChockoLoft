@@ -3,10 +3,18 @@
   top: 20%;
   right: 3%;
   z-index: 100;
+  @include tablets {
+    display: none;
+  }
+}
+
+.menu__link {
+  text-decoration: none;
+  white-space: nowrap;
 }
 
 .fixed-menu__item {
-  margin-bottom: 5px;
+  margin-bottom: rem(5px);
 
   &--active {
    .fixed-menu__link {
@@ -17,18 +25,18 @@
 }
 
 .fixed-menu__link {
-  width: 16px;
-  height: 16px;
+  width: rem(16px);
+  height: rem(16px);
   border-radius: 50%;
-  border: 1px solid transparent;
+  border: rem(1px) solid transparent;
   display: block;
   position: relative;
 
   &:before {
     content: "";
     display: block;
-    width: 6px;
-    height: 6px;
+    width: rem(6px);
+    height: rem(6px);
     border-radius: 50%;
     background: #fff;
     position: absolute;
@@ -36,4 +44,24 @@
     left: 50%;
     transform: translate(-50%, -50%);
   }
+}
+
+.menu {
+  margin: 0 rem(30px);
+  padding-top: rem(5px);
+
+  @include tablets {
+    display: none;
+  }
+}
+
+.phone-number {
+  @include tablets {
+    display: none;
+  }
+}
+
+.menu__list {
+  flex-wrap: wrap;
+  justify-content: center;
 }
