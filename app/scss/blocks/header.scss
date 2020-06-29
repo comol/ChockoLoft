@@ -2,7 +2,7 @@
 .header
 {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
 }
 
@@ -16,7 +16,8 @@
 }
 
 .menu__item {
-    margin-right: 15px;
+    margin-right: rem(15px);
+    margin-bottom: rem(10px);
     &:last-child {
         margin-right: 0;
     }
@@ -24,14 +25,18 @@
 
 .phone-number
 {
-    font-size: 24px;
+    font-size: rem(24px);
     text-decoration: none;
 }
 
 .phone-number__icon-elem {
-   width: 12px;
-   height: 12px;
-  margin-right: 6px;
+   width: rem(12px);
+   height: rem(12px);
+  margin-right: rem(6px);
   display: inline-flex;
 
+}
+
+.phone-number__icon {
+  flex-shrink: 0;
 }

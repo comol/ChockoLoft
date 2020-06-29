@@ -4,12 +4,17 @@
 
 .benefits {
   display: flex;
-  margin-top: 80px;
+  margin-top: rem(80px);
+
+  @include phones {
+    flex-direction: column;
+  }
+
 }
 
 .benefit__title {
   font-weight: bold;
-  margin-top: 35px;
+  margin-top: rem(35px);
 }
 
 .benefits__item{
@@ -17,10 +22,15 @@
   padding: 0 3%;
   position: relative;
 
+  @include phones {
+    padding: 0;
+    margin-bottom: rem(19px);
+  }
+
   &:before {
     content: url("../img/separator.png");
     position: absolute;
-    top: 60px;
+    top: rem(60px);
     right: 0;
     transform: translateX(50%);
   }
@@ -39,12 +49,17 @@
 
 .benefit {
   text-align: center;
+
+  @include phones {
+    display: flex;
+    text-align: left;
+  }
 }
 
 .benefit__image-wrapper {
   display: inline-block;
-  width: 126px;
-  height: 126px;
+  width: rem(126px);
+  height: rem(126px);
   position: relative;
   background: #f2f5f4;
   border-radius: 50%;
@@ -52,21 +67,36 @@
 }
 
 .benefit__image {
-  width: 75px;
-  height: 69px;
+  width: rem(75px);
+  height: rem(69px);
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+
+  @include phones {
+    margin-bottom: 0;
+    margin-right: rem(20px);
+  }
 }
 
 .benefits-section {
   position: relative;
   background: url("../img/side-leaf.png") left top 57% no-repeat;
+
+  @include phones {
+    background: none;
+  }
+
+  @include tablets {
+    background: none;
+  }
+
+
   &:before {
     content: url("../img/bars-and-berries.png");
     position: absolute;
-    bottom: -80px;
+    bottom: rem(-80px);
     left: 0;
   }
 }
