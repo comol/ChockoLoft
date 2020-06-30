@@ -1,34 +1,5 @@
 //setup
-$containerWidth: 940px;
-$baseFontSize: 18px;
-
-$blue: #61c4d9;
-$darkGreen: #0b4d3c;
-
-$tablets: 768px;
-$phones: 480px;
-
-@import "./layout/media";
 @import "./layout/layout";
 @import "./layout/fonts";
-
-
-
 //blocks
 @import "./blocks/header";
-@import "./blocks/hero";
-@import "./blocks/features";
-@import "./blocks/button";
-@import "./blocks/section";
-@import "./blocks/headline";
-@import "./blocks/benefits";
-@import "./blocks/reviews";
-@import "./blocks/section";
-@import "./blocks/form";
-@import "./blocks/fixed-menu";
-@import "./blocks/order";
-@import "./blocks/hamburger";
-@import "./blocks/slider";
-@import "./blocks/inc-menu";
-
-
