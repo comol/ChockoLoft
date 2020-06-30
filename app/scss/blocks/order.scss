@@ -1,0 +1,24 @@
+.order-section {
+  position: relative;
+  background: url("../img/delivery_fone.png");
+
+  &:after {
+    content: url("../img/chernika.png");
+    position: absolute;
+    bottom: 10%;
+    left: 3%;
+  }
+
+  &:before {
+    content: url("../img/big-leaf.png");
+    position: absolute;
+    bottom: 10%;
+    right: 1%;
+  }
+
+}
+
+.order-section__title {
+  margin-bottom: rem(50px);
+  margin-top: rem(10px);
+}
