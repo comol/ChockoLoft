@@ -45,6 +45,10 @@
   padding: rem(18px) rem(11px);
   border: solid rem(3px) transparent;
 
+  @include phones {
+    padding: rem(3px) rem(2px);
+  }
+
   &--textarea {
     height: rem(180px);
     resize: none;
@@ -71,6 +75,7 @@
   cursor: pointer;
   user-select: none;
   margin-top: rem(8px);
+  margin-left: rem(8px);
 
   @include phones {
     margin-bottom: rem(10px);
