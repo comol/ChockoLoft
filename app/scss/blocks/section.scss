@@ -5,6 +5,9 @@
   flex-direction: column;
   justify-content: center;
 
+  @include tablets {
+    min-height: initial;
+  }
 
   &--font-color--green {
     color: $darkGreen;
@@ -23,4 +26,10 @@
   text-transform: uppercase;
   color: black;
   margin-top: rem(-75px);
+  @include tablets{
+    font-size: rem(32px);
+  }
+  @include phones{
+    font-size: rem(24px);
+  }
 }

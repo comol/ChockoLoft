@@ -14,10 +14,7 @@
     bottom: rem(-40px);
     left: 2%;
     @include tablets {
-      bottom: rem(300px);
-      left: rem(10px);
-      width: rem(400px);
-      height: rem(400px);
+      display: none;
     }
   }
 

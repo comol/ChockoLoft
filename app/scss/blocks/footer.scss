@@ -1,0 +1,25 @@
+.footer__address {
+  color: #000000;
+  font-size: rem(21px);
+  font-weight: 400;
+  line-height: rem(23.82px);
+}
+
+.footer__content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+
+.footer__contact {
+  margin-top: rem(13px);
+  margin-left: rem(70px);
+}
+
+.footer {
+  position: absolute;
+  background: white;
+  bottom: 0;
+  width: 100%;
+}

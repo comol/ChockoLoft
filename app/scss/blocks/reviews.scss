@@ -105,6 +105,9 @@
     position: absolute;
     top: 15%;
     right: 3%;
+    @include phones {
+      display: none;
+    }
   }
 
   &:after {
@@ -112,6 +115,9 @@
     position: absolute;
     bottom: -5%;
     left: 0;
+    @include phones {
+      display: none;
+    }
   }
 }
 

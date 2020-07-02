@@ -5,7 +5,7 @@
 
 .features__item {
   display: inline-flex;
-  margin-right: rem(6px);
+  margin-right: rem(45px);
   &:last-child {
     margin-right: 0;
   }
@@ -13,7 +13,16 @@
 
 .feature__icon {
   width: rem(45px);
-  margin-right: rem(30px);
+  margin-right: rem(7px);
+  display: flex;
+  align-items: center;
+}
+
+.feature__icon--image {
+  width: rem(45px);
+  height: rem(45px);
+  fill: #c6f7ff;
+
 }
 
 .feature__text {

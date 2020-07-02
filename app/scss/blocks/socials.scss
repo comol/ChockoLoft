@@ -1,0 +1,19 @@
+.socials__list {
+  display: flex;
+  flex-direction: row;
+}
+
+.socials__image {
+  width: rem(20px);
+  height: rem(20px);
+  margin-right: rem(20px);
+  fill: #B3B3B3;
+  &:hover {
+    fill: black;
+  }
+}
+
+.socials {
+  display: flex;
+  align-items: center;
+}
