@@ -53,6 +53,11 @@
   margin-bottom: rem(17px);
   text-transform: uppercase;
   padding-top: rem(35px);
+  @include small {
+    font-size: rem(20px);
+    padding-top: 0;
+    margin-bottom: 0;
+  }
 }
 
 .hero__title-desc {

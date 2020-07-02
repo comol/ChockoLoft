@@ -5,6 +5,10 @@
   flex-direction: column;
   justify-content: center;
 
+  @include small {
+    height: 150vh;
+  }
+
   @include tablets {
     min-height: initial;
   }
@@ -25,7 +29,8 @@
   text-align: center;
   text-transform: uppercase;
   color: black;
-  margin-top: rem(-75px);
+  margin-top: rem(10px);
+
   @include tablets{
     font-size: rem(32px);
   }
