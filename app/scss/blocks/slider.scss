@@ -14,12 +14,6 @@
 
 }
 
-.slider-arrow {
-  @include tablets {
-    margin-bottom: rem(376px);
-  }
-}
-
 .slider-content {
   display: flex;
   flex-direction: row;
@@ -32,22 +26,23 @@
 .inc-panel {
   display: flex;
   flex-direction: column;
+  position: relative;
   align-items: center;
   vertical-align: middle;
-  margin-left: rem(67px);
-  width: rem(90px);
-  height: rem(90px);
+  max-width: rem(90px);
+  max-height: rem(90px);
   background-color: #60aacc;
   border-radius: rem(5px);
   cursor: pointer;
+  margin-bottom: 2rem;
   @include tablets {
     display: none;
   }
 }
 
 .inc-panel__image {
-  width: rem(51px);
-  height: rem(51px);
+  max-width: rem(51px);
+  max-height: rem(51px);
   margin-top: rem(10px);
   filter: invert(1);
 }
@@ -58,26 +53,21 @@
 }
 
 .slider-content__header {
-  width: rem(450px);
-  height: rem(72px);
   color: #000000;
   font-size: rem(36px);
   font-weight: 700;
   text-transform: uppercase;
-  margin-top: rem(37px);
-  margin-bottom: rem(37px);
-  padding-left: rem(67px);
   @include tablets {
     padding-left: 0;
     text-align: center;
     }
 }
 
+
 .slider-text {
   color: #666666;
   font-size: rem(18px);
   font-weight: 400;
-  padding-left: rem(67px);
   margin-right: rem(30px);
   &--bold {
     font-weight: 700;
@@ -89,12 +79,6 @@
 }
 
 .slider-content__text {
-  width: rem(400px);
-  height: rem(60px);
-  margin-top: rem(50px);
-  margin-bottom: rem(50px);
-  padding-left: rem(67px);
-
   @include tablets {
     text-align: center;
   }
@@ -113,7 +97,6 @@
   display: flex;
   flex-direction: row;
   margin-top: rem(30px);
-  padding-left: rem(67px);
   @include tablets {
     padding-left: 0;
     text-align: center;
@@ -140,3 +123,37 @@
   justify-content: center;
 }
 
+.slick-slider
+{
+  max-width: $containerWidth - 40px;
+  display: flex;
+  width: 100%;
+}
+
+.slick-initialized .slick-slide
+{
+  display: flex;
+}
+
+.slider-arrow {
+  cursor: pointer;
+  min-width: 1rem;
+}
+
+.slider-content__inc-panel-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.slider-content__text-block {
+  margin-left: rem(67px);
+  max-width: rem(380px);
+}
+
+.slider-section__img-left-arrow {
+  margin-left: 1rem;
+}
+
+.slider-section__right-arrow {
+  margin-right: 1rem;
+}

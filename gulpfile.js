@@ -38,7 +38,7 @@ gulp.task('styles', function() {
 
 gulp.task('js', function() {
 	return gulp.src([
-		'app/js/module.js', // Always at the end
+		'app/js/tabs.js', 'app/js/slidetoggle.js', 'app/js/slider.js', 'app/js/order.js', 'app/js/burger.js',  'app/js/module.js', // Always at the end
 		])
 	.pipe(sourcemaps.init({loadMaps: true}))
 		.pipe(concat('app.min.js'))
@@ -66,7 +66,7 @@ gulp.task('rsync', function() {
 
 gulp.task('watch', function() {
 	gulp.watch('app/scss/**/*.scss', gulp.series('styles'));
-	gulp.watch(['libs/**/*.js', 'app/js/module.js'], gulp.series('js'));
+	gulp.watch(['libs/**/*.js', 'app/js/module.js', 'app/js/tabs.js', 'app/js/slider.js', 'app/js/slidetoggle.js', 'app/js/order.js'], gulp.series('js'));
 	gulp.watch('app/*.html').on('change', browsersync.reload);
 });
 

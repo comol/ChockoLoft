@@ -24,10 +24,10 @@
     bottom: rem(-40px);
     right: 0;
     @include tablets {
-      bottom: rem(450px);
-      left: rem(10px);
-      width: rem(400px);
-      height: rem(400px);
+      bottom: 20%;
+      left: 30%;
+      max-width: 20%;
+      max-height: 20%;
     }
     @include phones {
       display: none;
@@ -89,8 +89,8 @@
 
     &:before {
       content: "";
-      width: rem(316px);
-      height: rem(330px);
+      max-width: rem(316px);
+      max-height: rem(330px);
       background: url("../img/chocolates.png") center center / contain no-repeat;
       margin-bottom: rem(16px);
     }

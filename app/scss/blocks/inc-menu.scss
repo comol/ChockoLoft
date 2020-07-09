@@ -1,12 +1,12 @@
 .inc-menu {
   display: none;
-  flex-direction: column;
-  width: rem(270px);
-  height: rem(329px);
-  background-color: #ffffff;
   position: absolute;
-  right: rem(37px);
-  top: 0;
+  flex-direction: column;
+  min-width: rem(270px);
+  padding-top: rem(30px);
+  padding-bottom: rem(30px);
+  background-color: #ffffff;
+  left: 100%;
   opacity: 0.9;
 }
 .inc-menu__component {
@@ -15,8 +15,8 @@
 }
 
 .inc-menu__image {
-  width: rem(35px);
-  height: rem(35px);
+  max-width: rem(35px);
+  max-height: rem(35px);
   margin-right: rem(24px);
   margin-left: rem(32px);
   margin-bottom: rem(14px);
@@ -29,4 +29,12 @@
   font-weight: bold;
   line-height: rem(24px);
   opacity: 1;
+}
+
+.inc-menu__grammes {
+  position: absolute;
+  right: rem(20px);
+  color: #373636;
+  font-weight: 400;
+  line-height: rem(24px);
 }
