@@ -7,7 +7,6 @@
     <title>CHOCCO</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
     <link rel="stylesheet" href="./css/slick.css">
-
     <link rel="stylesheet" href="./css/jquery.fancybox.min.css">
     <link rel="stylesheet" href="./css/main.css">
 </head>
@@ -17,55 +16,55 @@
         <a href="#" class="close-btn hamburger__btn"></a>
         <ul class="hamburger-panel__menu">
             <li class="hamburger__item">
-                <a href="#" class="hamburger-panel__link">О нас</a>
+                <a href="#" data-scroll-to="hero" class="hamburger-panel__link">О нас</a>
             </li>
             <li class="hamburger-panel__item">
-                <a href="#" class="hamburger-panel__link">Батончики</a>
+                <a href="#" data-scroll-to="benefits" class="hamburger-panel__link">Батончики</a>
             </li>
             <li class="hamburger-panel__item">
-                <a href="#" class="hamburger-panel__link">Команда</a>
+                <a href="#" data-scroll-to="team" class="hamburger-panel__link">Команда</a>
             </li>
             <li class="hamburger-panel__item">
-                <a href="#" class="hamburger-panel__link">Меню</a>
+                <a href="#" data-scroll-to="menu" class="hamburger-panel__link">Меню</a>
             </li>
             <li class="hamburger-panel__item">
-                <a href="#" class="hamburger-panel__link">Отзывы</a>
+                <a href="#" data-scroll-to="reviews" class="hamburger-panel__link">Отзывы</a>
             </li>
             <li class="hamburger-panel__item">
-                <a href="#" class="hamburger-panel__link">Как мы работаем</a>
+                <a href="#" data-scroll-to="pleer" class="hamburger-panel__link">Как мы работаем</a>
             </li>
             <li class="hamburger-panel__item">
-                <a href="#" class="hamburger-panel__link">Контакты</a>
+                <a href="#" data-scroll-to="map" class="hamburger-panel__link">Контакты</a>
             </li>
         </ul>
     </div>
     <div class="maincontent">
-        <section class="hero">
+        <section data-sidemenu-theme="white" data-section-id="hero" class="hero">
             <div class="container hero__container">
                 <header class="header">
                     <img src="./img/logo.png" alt="chocco logo" class="logo">
                     <nav class="menu">
                         <ul class="menu__list">
                             <li class="menu__item">
-                                <a href="#" class="menu__link">О нас</a>
+                                <a href="#" data-scroll-to="hero" class="menu__link">О нас</a>
                             </li>
                             <li class="menu__item">
-                                <a href="#" class="menu__link">Батончики</a>
+                                <a href="#" data-scroll-to="benefits" class="menu__link">Батончики</a>
                             </li>
                             <li class="menu__item">
-                                <a href="#" class="menu__link">Команда</a>
+                                <a href="#" data-scroll-to="team" class="menu__link">Команда</a>
                             </li>
                             <li class="menu__item">
-                                <a href="#" class="menu__link">Меню</a>
+                                <a href="#" data-scroll-to="menu" class="menu__link">Меню</a>
                             </li>
                             <li class="menu__item">
-                                <a href="#" class="menu__link">Отзывы</a>
+                                <a href="#" data-scroll-to="reviews" class="menu__link">Отзывы</a>
                             </li>
                             <li class="menu__item">
-                                <a href="#" class="menu__link">Как мы работаем</a>
+                                <a href="#" data-scroll-to="pleer" class="menu__link">Как мы работаем</a>
                             </li>
                             <li class="menu__item">
-                                <a href="#" class="menu__link">Контакты</a>
+                                <a href="#" data-scroll-to="map" class="menu__link">Контакты</a>
                             </li>
                         </ul>
                     </nav>
@@ -125,7 +124,7 @@
             </div>
         </section>
 
-        <section class="section benefits-section">
+        <section data-sidemenu-theme="black" data-section-id="benefits" class="section benefits-section">
             <div class="container">
                 <h2 class="section__title headline__title">ПОЧЕМУ CHOCCO?</h2>
                 <div class="headline__subtitle">
@@ -195,7 +194,7 @@
             </div>
         </section>
 
-        <section id="slidersection" class="section slider-section">
+        <section data-sidemenu-theme="black" data-section-id="slider" id="slidersection" class="section slider-section">
             <div class="container">
 
                 <div class="slider-section__all-slider">
@@ -410,7 +409,7 @@
             </div>
         </section>
 
-        <section class="section section-team">
+        <section data-sidemenu-theme="black" data-section-id="team" class="section section-team">
             <div class="container">
                 <h2 class="section__title section-team-tittle">Команда</h2>
                 <div class="team-container">
@@ -475,7 +474,56 @@
             </div>
         </section>
 
-        <section class="section reviews-section">
+        <section data-sidemenu-theme="white" data-section-id="menu" class="section section-menu" id="accord-menu">
+            <div class="container section-menu__container">
+                <h2 class="section__title section-menu-tittle">Меню</h2>
+                <ul class="accord" data-list="">
+                    <li class="accord__item">
+                        <a href="#" class="accord__link accord__milk" data="">
+                            <h5 class="accord__tittle">Батончики с молоком</h5>
+                        </a>
+                        <div class="accord__content">
+                            <div class="accord__text">
+                                <p>Рекомендуем употреблять батончики вместе с кокосовым или миндальным молоком. Так и вкуснее, и полезнее.
+                                    Ну чего ещё хотеть от жизни? Батончик – он твой лучший друг и радует всех вокруг. Как классно, что можно питаться полезно и вкусно, а не как попало. Бабуля, конечно, за такую еду не похвалит, но кто её будет спрашивать – никто. Надо бы, кстати, бабулю поздравить с днём Победы.
+                                </p>
+                                <a href="#" class="accord__close-btn">
+
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="accord__item">
+                        <a href="#" class="accord__link accord__honey" data="">
+                            <h5 class="accord__tittle">С мёдом и фруктами</h5>
+                        </a>
+                        <div class="accord__content">
+                            <div class="accord__text">
+                                <p>Рекомендуем употреблять батончики вместе с кокосовым или миндальным молоком. Так и вкуснее, и полезнее.
+                                    Ну чего ещё хотеть от жизни? Батончик – он твой лучший друг и радует всех вокруг. Как классно, что можно питаться полезно и вкусно, а не как попало. Бабуля, конечно, за такую еду не похвалит, но кто её будет спрашивать – никто. Надо бы, кстати, бабулю поздравить с днём Победы.
+                                </p>
+                                <a href="#" class="accord__close-btn"></a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="accord__item">
+                        <a href="#" class="accord__link accord__fruts" data="">
+                            <h5 class="accord__tittle">Дикие ягоды</h5>
+                        </a>
+                        <div class="accord__content">
+                            <div class="accord__text">
+                                <p>Рекомендуем употреблять батончики вместе с кокосовым или миндальным молоком. Так и вкуснее, и полезнее.
+                                    Ну чего ещё хотеть от жизни? Батончик – он твой лучший друг и радует всех вокруг. Как классно, что можно питаться полезно и вкусно, а не как попало. Бабуля, конечно, за такую еду не похвалит, но кто её будет спрашивать – никто. Надо бы, кстати, бабулю поздравить с днём Победы.
+                                </p>
+                                <a href="#" class="accord__close-btn"></a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section data-sidemenu-theme="black" data-section-id="reviews" class="section reviews-section">
             <div class="container">
                 <h2 class="section__title">Отзывы</h2>
                 <div class="reviews">
@@ -568,11 +616,33 @@
                         </li>
                     </ul>
                 </div>
-
             </div>
         </section>
 
-        <section class="section order-section section--font-color--green">
+        <section data-sidemenu-theme="white" data-section-id="pleer" class="section player-section">
+            <div class="container">
+                <h2 class="section__title pleer__title">Как мы работаем</h2>
+                <div class="player-section__container">
+                    <div class="player">
+                        <div class="player__wrapper">
+                            <div id="yt-player" class="player__elem"></div>
+                            <div class="player__splash"></div>
+                        </div>
+                        <div class="player__controls">
+                            <a class="player__start"></a>
+                            <div class="player__playback">
+                                <a class="player__playback-button"></a>
+                            </div>
+                            <div class="player__duration">
+                                <span class="player__duration-completed">0:00</span> : <span class="player__duration-estimate">0:00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section data-section-id="order" data-sidemenu-theme="black" class="section order-section section--font-color--green">
             <div class="container">
                 <h2 class="section__title order-section__title">Закажите доставку</h2>
                 <form action="" class="form">
@@ -662,10 +732,9 @@
             </div>
         </section>
 
-        <section class="section map-section">
+        <section data-section-id="map" data-sidemenu-theme="black" class="section map-section">
 
-                <div class="map-section__map">
-                    <img src="./img/map.png" alt="map image" class="map-section__image">
+                <div id="map" class="map">
                 </div>
 
                 <footer class="footer">
@@ -714,35 +783,28 @@
     </div>
 </div>
 
-
 <nav class="fixed-menu">
     <ul class="fixed-menu__list">
         <li class="fixed-menu__item fixed-menu__item--active">
-            <a href="#" class="fixed-menu__link"></a>
+            <a href="#" data-scroll-to="hero" class="fixed-menu__link"></a>
         </li>
         <li class="fixed-menu__item">
-            <a href="#" class="fixed-menu__link"></a>
+            <a href="#" data-scroll-to="benefits" class="fixed-menu__link"></a>
         </li>
         <li class="fixed-menu__item">
-            <a href="#" class="fixed-menu__link"></a>
+            <a href="#" data-scroll-to="team" class="fixed-menu__link"></a>
         </li>
         <li class="fixed-menu__item">
-            <a href="#" class="fixed-menu__link"></a>
+            <a href="#" data-scroll-to="menu" class="fixed-menu__link"></a>
         </li>
         <li class="fixed-menu__item">
-            <a href="#" class="fixed-menu__link"></a>
+            <a href="#" data-scroll-to="reviews" class="fixed-menu__link"></a>
         </li>
         <li class="fixed-menu__item">
-            <a href="#" class="fixed-menu__link"></a>
+            <a href="#" data-scroll-to="pleer" class="fixed-menu__link"></a>
         </li>
         <li class="fixed-menu__item">
-            <a href="#" class="fixed-menu__link"></a>
-        </li>
-        <li class="fixed-menu__item">
-            <a href="#" class="fixed-menu__link"></a>
-        </li>
-        <li class="fixed-menu__item">
-            <a href="#" class="fixed-menu__link"></a>
+            <a href="#" data-scroll-to="map" class="fixed-menu__link"></a>
         </li>
     </ul>
 </nav>
@@ -760,5 +822,9 @@
 <script src="./libs/jquery-3.3.1.min.js"></script>
 <script src="./libs/slick.min.js"></script>
 <script src="./libs/jquery.fancybox.min.js"></script>
+<script src="./libs/jquery.touchSwipe.min.js"></script>
+<script src="./libs/mobile-detect.min.js"></script>
+<script src="https://www.youtube.com/iframe_api"></script>
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
 <script src="./js/app.min.js"></script>
 </html>

@@ -8,6 +8,8 @@
 }
 .team {
   display: flex;
+  flex-grow: 1;
+  flex-shrink: 1;
   @include tablets {
     flex-direction: column;
     align-items: center;
@@ -22,6 +24,8 @@
   }
 }
 .team__pic {
+  max-width: rem(200px);
+  max-height: rem(240px);
   @include tablets {
     display: none;
   }
@@ -29,7 +33,8 @@
 
 .team__pic-container {
   margin-bottom: rem(20px);
-  max-width: rem(210px);
+
+  margin-top: rem(40px);
 }
 
 .team__link {

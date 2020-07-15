@@ -35,6 +35,7 @@ $('.form').submit(e => {
     popup.removeClass('error-popup');
 
     const isValid = validateFields(form, [name, phone, comment, to]);
+    const statusAjaxForm = {};
 
     if (isValid) {
         const request = $.ajax({
@@ -51,18 +52,28 @@ $('.form').submit(e => {
 
         request.done(data => {
             content.text(data.message);
+            statusAjaxForm.done = true;
+            popup.find('.popup__text').removeClass('error-popup');
         });
 
         request.fail(data => {
+            statusAjaxForm.done = false;
             const message = data.responseJSON.message;
             content.text(message);
-            popup.find('.popup__text').addClass('error-popup')
+            popup.find('.popup__text').addClass('error-popup');
         });
 
         request.always(() => {
             $.fancybox.open({
                 src: '#popup',
                 type: 'inline',
+
+                afterClose: function () {
+                    if (statusAjaxForm.done)
+                    {
+                        form[0].reset();
+                    }
+                }
             });
         })
     }
