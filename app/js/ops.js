@@ -12,21 +12,6 @@ sections.first().addClass("active");
 
 const countSectionPosition = sectionEq => {
 
-    const activeSection = sections.filter(".active");
-
-    asheihgt = activeSection.next().height();
-    console.log(asheihgt);
-
-    aesheihgt = activeSection.height();
-    console.log(aesheihgt);
-
-    sheight = $(window).height();
-    console.log(sheight);
-
-    dbeight = $(document).height();
-    console.log(dbeight);
-
-
     return sectionEq * -100;
 
     //let hei = activeSection.next().height();

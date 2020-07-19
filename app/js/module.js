@@ -1,4 +1,3 @@
-let b = 15;
 
 $(".inc-panel").each(function () {
     $(this).on('mouseover', function() {
