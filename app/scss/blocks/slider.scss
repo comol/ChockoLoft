@@ -61,6 +61,9 @@
     padding-left: 0;
     text-align: center;
     }
+  @include small {
+    font-size: 1rem;
+  }
 }
 
 
@@ -111,6 +114,9 @@
   line-height: rem(60px);
   text-transform: uppercase;
   margin-right: rem(30px);
+  @include small {
+    font-size: rem(30px);
+  }
 }
 
 .main-slider-image__img {

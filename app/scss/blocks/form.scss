@@ -52,6 +52,9 @@
   &--textarea {
     height: rem(180px);
     resize: none;
+    @include phones {
+      height: rem(50px);
+    }
   }
 
   &:focus {

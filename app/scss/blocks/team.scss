@@ -4,7 +4,7 @@
 }
 
 .team-container {
-  min-height: rem(450px);
+  //min-height: rem(450px);
 }
 .team {
   display: flex;
@@ -25,7 +25,7 @@
 }
 .team__pic {
   max-width: rem(200px);
-  max-height: rem(240px);
+  //max-height: rem(240px);
   @include tablets {
     display: none;
   }

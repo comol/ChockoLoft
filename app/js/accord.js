@@ -1,5 +1,5 @@
 
-function Accord(selector) {
+function accord(selector) {
     const accord = document.querySelector(selector);
     const items = accord.querySelector('[data-list]').children;
     const closeButton = document.querySelector('.accord__close-btn');
@@ -30,4 +30,4 @@ function Accord(selector) {
 
 }
 
-Accord ('#accord-menu')
+accord ('#accord-menu')

@@ -21,6 +21,9 @@
 .order-section__title {
   margin-bottom: rem(50px);
   margin-top: 7rem;
+  @include phones {
+    margin-top: 2rem;
+  }
   @include small {
     margin-top: 0;
     margin-bottom: 0;

@@ -1,6 +1,7 @@
 const burgerBtn = $('#burger');
 const hamburger = $('.hamburger-panel');
 const closeBtn = $('.close-btn');
+const hambLink = $('.hamburger-panel__link');
 
 function switcher(elem, className) {
     elem.toggleClass(className);
@@ -33,4 +34,12 @@ closeBtn.click( e => {
         }, 500);
     }
 
+});
+
+hambLink.click( e => {
+    hamburger.removeClass('isActive');
+    setTimeout(function() {
+        switcher(hamburger, 'hidden');
+        flag = false;
+        }, 500);
 });

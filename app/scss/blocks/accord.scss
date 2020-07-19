@@ -1,5 +1,4 @@
 .section-menu {
-  display: block;
   background: url("../img/menu/fone.png") center center / cover no-repeat black;
 }
 
@@ -7,6 +6,8 @@
 .section-menu__container {
   height: 100%;
   width: 100%;
+  position: relative;
+
 }
 
 .section-menu-tittle {
@@ -14,6 +15,13 @@
   text-align: start;
   padding-top: rem(100px);
   margin-left: rem(80px);
+  @include tablets {
+    margin-left: rem(10px);
+  }
+  @include small {
+    margin-left: rem(3px);
+    font-size: 1rem;
+  }
 }
 
 .accord {
@@ -32,7 +40,7 @@
 
 .item-active {
   .accord__content {
-    width: rem(500px);
+    width: 50vw;
   }
 }
 
@@ -40,6 +48,24 @@
   display: flex;
   width: rem(100px);
   text-align: center;
+
+  &--fruts {
+    background:  url("../img/menu/mondarin.png") black;
+    text-decoration: none;
+    background-size: cover;
+  }
+
+  &--honey {
+    background: url("../img/menu/berries.png") black;
+    text-decoration: none;
+    background-size: cover;
+  }
+
+  &--milk {
+    background: url("../img/menu/coco.png") black;
+    text-decoration: none;
+    background-size: cover;
+  }
 }
 
 .accord__content {
@@ -50,7 +76,8 @@
 
 .accord__text {
   height: 100%;
-  min-width: 35rem;
+  //min-width: 35rem;
+  min-width: 22rem;
   overflow-y: auto;
   font-size: 16px;
   background-color: rgb(51, 53, 55);
@@ -79,28 +106,5 @@
   transform: rotate(-180deg);
   text-decoration: none;
   text-align: left;
-}
-
-.item-active {
-
-}
-
-.accord__fruts {
-  background:  url("../img/menu/mondarin.png") center center no-repeat black;
-  text-decoration: none;
-}
-
-.accord__honey {
-  background: url("../img/menu/berries.png") center center no-repeat black;
-  text-decoration: none;
-}
-
-.accord__milk {
-  background: url("../img/menu/coco.png") center center no-repeat black;
-  text-decoration: none;
-}
-
-.accord__tittle  {
-  text-decoration: none;
   margin-top: rem(-50px);
 }

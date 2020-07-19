@@ -11,7 +11,25 @@ let inScroll = false;
 sections.first().addClass("active");
 
 const countSectionPosition = sectionEq => {
-    return sectionEq * -103.5;
+
+    const activeSection = sections.filter(".active");
+
+    asheihgt = activeSection.next().height();
+    console.log(asheihgt);
+
+    aesheihgt = activeSection.height();
+    console.log(aesheihgt);
+
+    sheight = $(window).height();
+    console.log(sheight);
+
+    dbeight = $(document).height();
+    console.log(dbeight);
+
+
+    return sectionEq * -100;
+
+    //let hei = activeSection.next().height();
 };
 
 const changeMenuThemeForSection = (sectionEq) => {
@@ -43,6 +61,7 @@ const performTransition = sectionEq => {
 
     changeMenuThemeForSection(sectionEq);
 
+
     display.css({
         transform: `translateY(${position}%)`
     });
@@ -57,6 +76,7 @@ const performTransition = sectionEq => {
         resetActiveClassForItem(menuItems, sectionEq, "fixed-menu__item--active");
 
     }, transitionOver + mouseInertiaOver)
+
 };
 
 const scrollViewport = direction => {
